@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- time: 1:58 PM 20/9 -> 4:09 PM-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="#0" id="logo">MOVIESEEK</a>
+        <ul id="main-nav">
+            <li><a href="#1">Login</a></li>
+            <li><a href="#2">Logout</a></li>
+            <li><a href="#3">Register</a></li>
+            <li><a href="#4">Admin</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div id="slider">
+            <div id="container" style="width: 3000px;">
+		    <div class="slide" slide="1" style="background: green;"><h1>Movie 1</h1></div>
+		    <div class="slide" slide="2" style="background: blue;"><h1>Movie 2</h1></div>
+		    <div class="slide" slide="3" style="background: white;"><h1>Movie 3</h3></div>
+		    <div class="slide" slide="4" style="background: red;"><h1>Movie 4</h1></div>
+		    <div class="slide" slide="5" style="background: black;"><h1>Movie 5</h1></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>About</h2>
+        <p>This website is made to make it easy for people like you to know more about the latest movies.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, non ut fugit doloremque facilis accusamus reiciendis ex unde? Aut provident velit non, magni odit rem animi ad tempora rerum similique?
+        </p>
+    </section>
+    <footer>Made with &hearts; by Masters Group.</footer>
+    <script>
+	function doScroll()
+	{
+		container.style.left = container.offsetLeft - 1 + "px";
+		if (container.offsetLeft < -3000)
+			container.style.left = '0px';
+	}
+	setInterval(doScroll, 1);
+
+    </script>
+</body>
+</html>
